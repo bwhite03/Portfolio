@@ -1,0 +1,466 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+#header .header-container {
+  background: url("img/sky.jpeg");
+  height: 70vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header .header-container .logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#header .header-container .logo img {
+  width: 75px;
+}
+#header .header-container .hamburger {
+  display: none;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+#header .header-container .hamburger span {
+  background: #000;
+  border-radius: 3px;
+  display: block;
+  height: 3px;
+  margin-top: 5px;
+  padding: 0;
+  position: relative;
+  transition: all 0.2s ease;
+  width: 25px;
+}
+#header .header-container .active .one {
+  -webkit-transform: rotate3d(0, 0, 1, 45deg);
+  transform: rotate3d(0, 0, 1, 45deg);
+  top: 7px;
+}
+#header .header-container .active .two {
+  opacity: 0;
+}
+#header .header-container .active .three {
+  -webkit-transform: rotate3d(0, 0, 1, -45deg);
+  transform: rotate3d(0, 0, 1, -45deg);
+  top: -9px;
+}
+#header .header-container .menu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+#header .header-container .menu ul a {
+  font-family: "Raleway", Sans-Serif;
+  font-weight: 900;
+  text-decoration: none;
+  color: black;
+}
+#header .header-container .menu ul a li {
+  display: inline-block;
+  padding: 10px;
+}
+#header .header-container .info {
+  text-align: center;
+}
+#header .header-container .info .picture img {
+  border-radius: 50%;
+  width: 75px;
+}
+#header .header-container .info .name h1 {
+  font-family: "Raleway", Sans-Serif;
+  font-weight: 900;
+  font-size: 40px;
+  margin-top: 10px;
+}
+#header .header-container .info .title h2 {
+  font-size: 20px;
+  margin-top: 10px;
+  font-family: "Raleway", Sans-Serif;
+  font-weight: 900;
+}
+#header .header-container .info .social {
+  margin-top: 10px;
+}
+#header .header-container .info .social a {
+  display: inline-block;
+  color: black;
+  font-size: 25px;
+  padding: 10px;
+}
+#header .header-container .info .latest {
+  margin-top: 20px;
+}
+#header .header-container .info .latest a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px;
+  border: 2px solid black;
+  font-family: "Raleway", Sans-Serif;
+}
+#header .header-container .info .latest a:hover {
+  transition: ease-in-out 0.5s;
+  color: white;
+  border-color: white;
+}
+
+#about {
+  padding: 40px 0 0 0;
+  margin: 0 auto;
+  background: white;
+}
+#about h1 {
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  font-family: "Raleway", Sans-Serif;
+  font-weight: 900;
+  color: #414141;
+  font-size: 40px;
+  border-bottom: 1px solid #414141;
+  width: 150px;
+  margin: 0 auto;
+}
+#about .box-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+#about .box-container .box {
+  background: rgba(255, 255, 255, 0);
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  padding: 30px;
+}
+#about .box-container .box:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+#about .box-container .box h2 {
+  text-align: center;
+  font-family: "Raleway", Sans-Serif;
+  font-weight: 900;
+  font-size: 25px;
+  color: #414141;
+}
+#about .box-container .box p {
+  width: 90%;
+  margin: 10px auto 10px auto;
+  font-family: "Open Sans", Sans-Serif;
+  line-height: 1.2;
+  color: #414141;
+  font-size: 18px;
+}
+#about .box-container .box .icons {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#about .box-container .box .icons .fab {
+  font-size: 30px;
+  padding: 15px;
+  text-align: center;
+}
+#about .box-container .one {
+  border-bottom: 2px solid #414141;
+}
+#about .box-container .two {
+  border-bottom: 2px solid #414141;
+}
+#about .box-container .three {
+  border-bottom: 2px solid #414141;
+}
+
+#projects {
+  background: #f8f8f8;
+  margin: 40px auto 0 auto;
+  padding-bottom: 40px;
+}
+#projects h1 {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  font-family: "Raleway", Sans-Serif;
+  font-weight: 900;
+  color: #414141;
+  font-size: 40px;
+  border-bottom: 1px solid #414141;
+  width: 150px;
+  margin: 0 auto;
+}
+#projects .projects-container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 250px 250px 250px;
+  grid-gap: 10px;
+}
+#projects .projects-container .box .title {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#projects .projects-container .box .title h2 {
+  border: 1px solid black;
+  padding: 10px;
+  font-family: "Raleway", Sans-Serif;
+  font-weight: 900;
+  font-size: 20px;
+  display: none;
+}
+#projects .projects-container .box:hover .title {
+  background: rgba(255, 255, 255, 0.7);
+}
+#projects .projects-container .box:hover .title h2 {
+  display: block;
+}
+#projects .projects-container .one {
+  background: url("https://cdn.dribbble.com/users/2090940/screenshots/5352605/presentasi_dribbble_4x.png");
+  background-size: cover;
+}
+#projects .projects-container .two {
+  background: url("https://cdn.dribbble.com/users/1643592/screenshots/5331703/preview_5_4x.png");
+  background-size: cover;
+}
+#projects .projects-container .three {
+  background: url("https://cdn.dribbble.com/users/970957/screenshots/5352410/13-server-hosting-revisi.gif");
+  background-size: cover;
+}
+#projects .projects-container .four {
+  background: url("https://cdn.dribbble.com/users/1123328/screenshots/5354325/board-decks-desktop-mark-maynard_4x.jpg");
+  background-size: cover;
+}
+#projects .projects-container .five {
+  background: url("https://cdn.dribbble.com/users/501888/screenshots/5115887/boulder_abodes_1_small_4x.jpg");
+  background-size: cover;
+}
+#projects .projects-container .six {
+  background: url("https://cdn.dribbble.com/users/1691844/screenshots/5350165/12_1_b_4x.jpg");
+  background-size: cover;
+}
+#projects .projects-container .seven {
+  background: url("https://cdn.dribbble.com/users/1581557/screenshots/5353307/dribbble_shot_mockup_03_1x.png");
+  background-size: cover;
+}
+#projects .projects-container .eight {
+  background: url("https://cdn.dribbble.com/users/58708/screenshots/5355468/findyourwave-dribbble_4x.png");
+  background-size: cover;
+}
+#projects .projects-container .nine {
+  background: url("https://cdn.dribbble.com/users/391380/screenshots/5353890/inspace-shot_4x.jpg");
+  background-size: cover;
+}
+
+#contact {
+  background: #e8e8e8;
+}
+#contact .contact-container {
+  padding-bottom: 40px;
+}
+#contact .contact-container h1 {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  font-family: "Raleway", Sans-Serif;
+  font-weight: 900;
+  color: #414141;
+  font-size: 40px;
+  border-bottom: 1px solid #414141;
+  width: 150px;
+  margin: 0 auto;
+}
+#contact .contact-container .info {
+  text-align: center;
+  margin-top: 40px;
+}
+#contact .contact-container .info a {
+  font-size: 40px;
+  color: black;
+  padding: 10px;
+}
+
+@media all and (max-width: 900px) {
+  #about .box-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+  }
+
+  #projects .projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 250px 250px 250px 250px 250px;
+  }
+}
+@media all and (max-width: 550px) {
+  #header .header-container .hamburger {
+    display: block;
+  }
+  #header .menu {
+    display: none;
+  }
+
+  #about .box-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+
+  #projects .projects-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 250px 250px 250px 250px 250px 250px 250px 250px;
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
