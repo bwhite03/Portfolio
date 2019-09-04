@@ -1,0 +1,111 @@
+#projects {
+  background: #f8f8f8;
+  margin: 40px auto 0 auto;
+  padding-bottom: 40px;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  h1 {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-family: "Raleway", Sans-Serif;
+    font-weight: 900;
+    color: #414141;
+    font-size: 40px;
+    border-bottom: 1px solid #414141;
+    width: 150px;
+    margin: 0 auto;
+  }
+  .projects-container {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 250px 250px;
+    grid-gap: 10px;
+    .box {
+      .title {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2 {
+          border: 1px solid black;
+          padding: 10px;
+          font-family: "Raleway", Sans-Serif;
+          font-weight: 900;
+          font-size: 20px;
+          display: none;
+        }
+      }
+      &:hover {
+        .title {
+          background: rgba(255, 255, 255, 0.7);
+          h2 {
+            display: block;
+          }
+        }
+      }
+    }
+    .one {
+      background: url("https://cdn.dribbble.com/users/2090940/screenshots/5352605/presentasi_dribbble_4x.png");
+      background-size: cover;
+    }
+    .two {
+      background: url("https://cdn.dribbble.com/users/1643592/screenshots/5331703/preview_5_4x.png");
+      background-size: cover;
+    }
+    .three {
+      background: url("https://cdn.dribbble.com/users/970957/screenshots/5352410/13-server-hosting-revisi.gif");
+      background-size: cover;
+    }
+    .four {
+      background: url("https://cdn.dribbble.com/users/1123328/screenshots/5354325/board-decks-desktop-mark-maynard_4x.jpg");
+      background-size: cover;
+    }
+    .five {
+      background: url("https://cdn.dribbble.com/users/501888/screenshots/5115887/boulder_abodes_1_small_4x.jpg");
+      background-size: cover;
+    }
+    .six {
+      background: url("https://cdn.dribbble.com/users/1691844/screenshots/5350165/12_1_b_4x.jpg");
+      background-size: cover;
+    }
+    .seven {
+      background: url("https://cdn.dribbble.com/users/1581557/screenshots/5353307/dribbble_shot_mockup_03_1x.png");
+      background-size: cover;
+    }
+    .eight {
+      background: url("https://cdn.dribbble.com/users/58708/screenshots/5355468/findyourwave-dribbble_4x.png");
+      background-size: cover;
+    }
+    .nine {
+      background: url("https://cdn.dribbble.com/users/391380/screenshots/5353890/inspace-shot_4x.jpg");
+      background-size: cover;
+    }
+  }
+}
+
+@media all and (max-width: 900px) {
+  #projects {
+    .projects-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 250px 250px 250px 250px 250px;
+    }
+  }
+}
+
+@media all and (max-width: 550px) {
+  #projects {
+    .projects-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 250px 250px 250px 250px 250px 250px 250px 250px 250px;
+    }
+  }
+}

@@ -1,0 +1,89 @@
+#about {
+  padding: 40px 0 0 0;
+  margin: 0 auto;
+  background: white;
+  h1 {
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    font-family: "Raleway", Sans-Serif;
+    font-weight: 900;
+    color: #414141;
+    font-size: 40px;
+    border-bottom: 1px solid #414141;
+    width: 150px;
+    margin: 0 auto;
+  }
+  .box-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    .box {
+      background: rgba(255, 255, 255, 0);
+      transition: all 0.4s ease-in-out;
+      cursor: pointer;
+      padding: 30px 0;
+      &:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+          0 10px 10px rgba(0, 0, 0, 0.22);
+      }
+      h2 {
+        text-align: center;
+        font-family: "Raleway", Sans-Serif;
+        font-weight: 900;
+        font-size: 25px;
+        color: #414141;
+      }
+      p {
+        width: 90%;
+        margin: 10px auto 10px auto;
+        font-family: "Open Sans", Sans-Serif;
+        line-height: 1.2;
+        color: #414141;
+        font-size: 18px;
+      }
+      .icons {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        .fab {
+          font-size: 30px;
+          padding: 15px;
+          text-align: center;
+        }
+      }
+    }
+    .one {
+      border-bottom: 2px solid #414141;
+    }
+    .two {
+      border-bottom: 2px solid #414141;
+    }
+    .three {
+      border-bottom: 2px solid #414141;
+    }
+  }
+}
+
+@media all and (max-width: 900px) {
+  #about {
+    .box-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 50%;
+    }
+  }
+}
+
+@media all and (max-width: 550px) {
+  #about {
+    .box-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 90%;
+    }
+  }
+}

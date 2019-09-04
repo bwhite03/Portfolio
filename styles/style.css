@@ -133,13 +133,8 @@ table {
   border-spacing: 0;
 }
 
-html,
-body {
-  overflow-x: hidden;
-}
-
 #header .header-container {
-  background: url("img/sky.jpeg");
+  background: url("../img/sky.jpeg");
   height: 70vh;
   background-position: center center;
   background-repeat: no-repeat;
@@ -205,10 +200,6 @@ body {
 #header .header-container .info {
   text-align: center;
 }
-#header .header-container .info .picture img {
-  border-radius: 50%;
-  width: 75px;
-}
 #header .header-container .info .name h1 {
   font-family: "Raleway", Sans-Serif;
   font-weight: 900;
@@ -247,6 +238,14 @@ body {
   border-color: white;
 }
 
+@media all and (max-width: 550px) {
+  #header .header-container .hamburger {
+    display: block;
+  }
+  #header .menu {
+    display: none;
+  }
+}
 #about {
   padding: 40px 0 0 0;
   margin: 0 auto;
@@ -276,7 +275,7 @@ body {
   background: rgba(255, 255, 255, 0);
   transition: all 0.4s ease-in-out;
   cursor: pointer;
-  padding: 30px;
+  padding: 30px 0;
 }
 #about .box-container .box:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -316,10 +315,28 @@ body {
   border-bottom: 2px solid #414141;
 }
 
+@media all and (max-width: 900px) {
+  #about .box-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+  }
+}
+@media all and (max-width: 550px) {
+  #about .box-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+}
 #projects {
   background: #f8f8f8;
   margin: 40px auto 0 auto;
   padding-bottom: 40px;
+}
+#projects a {
+  text-decoration: none;
+  color: black;
 }
 #projects h1 {
   text-align: center;
@@ -400,6 +417,20 @@ body {
   background-size: cover;
 }
 
+@media all and (max-width: 900px) {
+  #projects .projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 250px 250px 250px 250px 250px;
+  }
+}
+@media all and (max-width: 550px) {
+  #projects .projects-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 250px 250px 250px 250px 250px 250px 250px 250px;
+  }
+}
 #contact {
   background: #e8e8e8;
 }
@@ -428,39 +459,9 @@ body {
   padding: 10px;
 }
 
-@media all and (max-width: 900px) {
-  #about .box-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 50%;
-  }
-
-  #projects .projects-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 250px 250px 250px 250px 250px;
-  }
-}
-@media all and (max-width: 550px) {
-  #header .header-container .hamburger {
-    display: block;
-  }
-  #header .menu {
-    display: none;
-  }
-
-  #about .box-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 90%;
-  }
-
-  #projects .projects-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 250px 250px 250px 250px 250px 250px 250px 250px 250px;
-    padding: 0;
-  }
+html,
+body {
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,119 @@
+#header .header-container {
+  background: url("../img/sky.jpeg");
+  height: 70vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    img {
+      width: 75px;
+    }
+  }
+  .hamburger {
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    span {
+      background: #000;
+      border-radius: 3px;
+      display: block;
+      height: 3px;
+      margin-top: 5px;
+      padding: 0;
+      position: relative;
+      transition: all 0.2s ease;
+      width: 25px;
+    }
+  }
+  .active {
+    .one {
+      -webkit-transform: rotate3d(0, 0, 1, 45deg);
+      transform: rotate3d(0, 0, 1, 45deg);
+      top: 7px;
+    }
+    .two {
+      opacity: 0;
+    }
+    .three {
+      -webkit-transform: rotate3d(0, 0, 1, -45deg);
+      transform: rotate3d(0, 0, 1, -45deg);
+      top: -9px;
+    }
+  }
+  .menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    ul a {
+      font-family: "Raleway", Sans-Serif;
+      font-weight: 900;
+      text-decoration: none;
+      color: black;
+      li {
+        display: inline-block;
+        padding: 10px;
+      }
+    }
+  }
+  .info {
+    text-align: center;
+    .name h1 {
+      font-family: "Raleway", Sans-Serif;
+      font-weight: 900;
+      font-size: 40px;
+      margin-top: 10px;
+    }
+    .title h2 {
+      font-size: 20px;
+      margin-top: 10px;
+      font-family: "Raleway", Sans-Serif;
+      font-weight: 900;
+    }
+    .social {
+      margin-top: 10px;
+      a {
+        display: inline-block;
+        color: black;
+        font-size: 25px;
+        padding: 10px;
+      }
+    }
+    .latest {
+      margin-top: 20px;
+      a {
+        color: black;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 5px;
+        border: 2px solid black;
+        font-family: "Raleway", Sans-Serif;
+        &:hover {
+          transition: ease-in-out 0.5s;
+          color: white;
+          border-color: white;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 550px) {
+  #header {
+    .header-container {
+      .hamburger {
+        display: block;
+      }
+    }
+    .menu {
+      display: none;
+    }
+  }
+}
