@@ -184,8 +184,13 @@ table {
 }
 #header .header-container .menu {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  width: 100%;
+  top: 0;
+  padding: 10px;
+}
+#header .header-container .menu ul {
+  text-align: right;
+  padding: 0 10px;
 }
 #header .header-container .menu ul a {
   font-family: "Raleway", Sans-Serif;
