@@ -1,0 +1,17 @@
+.menu {
+  padding: 10px;
+  ul {
+    text-align: right;
+    padding: 0 20px;
+    a {
+      font-family: "Raleway", Sans-Serif;
+      font-weight: 900;
+      text-decoration: none;
+      color: black;
+    }
+    li {
+      display: inline-block;
+      padding: 10px;
+    }
+  }
+}

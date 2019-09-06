@@ -3,8 +3,11 @@
 @import "about.scss";
 @import "projects.scss";
 @import "contact.scss";
+@import "project-header.scss";
+@import "project-info.scss";
 
 html,
 body {
   overflow-x: hidden;
+  box-sizing: border-box;
 }
