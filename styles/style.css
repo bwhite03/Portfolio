@@ -396,6 +396,7 @@ table {
 #projects .projects-container .three {
   background: url(/img/bitcoin-images/bitcoin-pic1.PNG);
   background-size: cover;
+  background-position: center;
 }
 #projects .projects-container .four {
   background: url("https://cdn.dribbble.com/users/1123328/screenshots/5354325/board-decks-desktop-mark-maynard_4x.jpg");
@@ -511,12 +512,16 @@ table {
   color: #414141;
   padding-right: 5px;
 }
-.container .images-container {
+.container .glide {
   padding-top: 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 400px;
-  grid-gap: 20px;
+}
+.container .glide .fa-chevron-left,
+.container .glide .fa-chevron-right {
+  color: black;
+  font-size: 30px;
+}
+.container .glide img {
+  width: 100%;
 }
 .container .technologies-used {
   padding-top: 30px;

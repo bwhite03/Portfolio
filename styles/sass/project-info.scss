@@ -30,12 +30,16 @@
     }
   }
 
-  .images-container {
+  .glide {
     padding-top: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 400px;
-    grid-gap: 20px;
+    .fa-chevron-left,
+    .fa-chevron-right {
+      color: black;
+      font-size: 30px;
+    }
+    img {
+      width: 100%;
+    }
   }
 
   .technologies-used {

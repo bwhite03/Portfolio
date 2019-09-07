@@ -20,6 +20,14 @@
       integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
+    />
     <title>Blake White</title>
   </head>
   <body>
@@ -42,15 +50,28 @@
         <a href="#">Website</a>
         <a href="#">GitHub</a>
       </div>
-      <div class="images-container">
-        <div
-          class="image-box1"
-          style="background: url(/img/bitcoin-images/bitcoin-pic1.PNG); background-size: cover;"
-        ></div>
-        <div
-          class="image-box2"
-          style="background: url(/img/bitcoin-images/bitcoin-pic2.PNG); background-size: cover;"
-        ></div>
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li>
+              <img src="/img/bitcoin-images/bitcoin-pic1.PNG" />
+            </li>
+            <li class="glide__slide">
+              <img src="/img/bitcoin-images/bitcoin-pic2.PNG" />
+            </li>
+            <li class="glide__slide">
+              <img src="/img/bitcoin-images/bitcoin-pic3.PNG" />
+            </li>
+          </ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
       </div>
       <div class="technologies-used">
         <h2>Technologies Used</h2>
@@ -58,5 +79,9 @@
         <span><i class="fab fa-react" style="color: #00d8ff;"></i></span>
       </div>
     </main>
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <script>
+      new Glide(".glide").mount();
+    </script>
   </body>
 </html>
