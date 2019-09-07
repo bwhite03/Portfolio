@@ -31,7 +31,7 @@
   }
 
   .glide {
-    padding-top: 30px;
+    margin-top: 30px;
     .fa-chevron-left,
     .fa-chevron-right {
       color: black;
@@ -52,8 +52,9 @@
     }
 
     span {
-      padding-top: 10px;
-      font-size: 30px;
+      padding: 10px 5px 0 0;
+      font-size: 25px;
+      font-family: "Raleway", sans-serif;
     }
   }
 }
