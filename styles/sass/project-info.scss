@@ -35,7 +35,6 @@
     .fa-chevron-left,
     .fa-chevron-right {
       color: black;
-      font-size: 30px;
     }
     img {
       width: 100%;
@@ -55,6 +54,14 @@
     span {
       padding-top: 10px;
       font-size: 30px;
+    }
+  }
+}
+
+@media all and (max-width: 650px) {
+  .container {
+    .project-description {
+      width: 100%;
     }
   }
 }

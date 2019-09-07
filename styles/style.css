@@ -386,8 +386,9 @@ table {
   display: block;
 }
 #projects .projects-container .one {
-  background: url(/img/E-commerce-images/e-commerce-pic.PNG);
+  background: url(/img/E-commerce-images/e-commerce-pic1.PNG);
   background-size: cover;
+  background-position: center;
 }
 #projects .projects-container .two {
   background: url(/img/chat-app-images/chat-app-pic.PNG);
@@ -518,7 +519,6 @@ table {
 .container .glide .fa-chevron-left,
 .container .glide .fa-chevron-right {
   color: black;
-  font-size: 30px;
 }
 .container .glide img {
   width: 100%;
@@ -538,6 +538,11 @@ table {
   font-size: 30px;
 }
 
+@media all and (max-width: 650px) {
+  .container .project-description {
+    width: 100%;
+  }
+}
 html,
 body {
   overflow-x: hidden;
