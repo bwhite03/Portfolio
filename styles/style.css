@@ -133,6 +133,29 @@ table {
   border-spacing: 0;
 }
 
+.mobile-nav {
+  display: none;
+  background: white;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+}
+.mobile-nav ul {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-nav ul a {
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 30px;
+  color: #414141;
+  font-family: "Raleway", Sans-Serif;
+}
+
 #header .header-container {
   background: url("../img/sky.jpeg");
   height: 70vh;
@@ -155,32 +178,10 @@ table {
 #header .header-container .hamburger {
   display: none;
   position: fixed;
-  top: 10px;
-  right: 10px;
-}
-#header .header-container .hamburger span {
-  background: #000;
-  border-radius: 3px;
-  display: block;
-  height: 3px;
-  margin-top: 5px;
-  padding: 0;
-  position: relative;
-  transition: all 0.2s ease;
-  width: 25px;
-}
-#header .header-container .active .one {
-  -webkit-transform: rotate3d(0, 0, 1, 45deg);
-  transform: rotate3d(0, 0, 1, 45deg);
-  top: 7px;
-}
-#header .header-container .active .two {
-  opacity: 0;
-}
-#header .header-container .active .three {
-  -webkit-transform: rotate3d(0, 0, 1, -45deg);
-  transform: rotate3d(0, 0, 1, -45deg);
-  top: -9px;
+  top: 15px;
+  right: 20px;
+  font-size: 20px;
+  cursor: pointer;
 }
 #header .header-container .menu {
   position: absolute;
@@ -196,7 +197,7 @@ table {
   font-family: "Raleway", Sans-Serif;
   font-weight: 900;
   text-decoration: none;
-  color: black;
+  color: #414141;
 }
 #header .header-container .menu ul a li {
   display: inline-block;
@@ -207,45 +208,35 @@ table {
 }
 #header .header-container .info .name h1 {
   font-family: "Raleway", Sans-Serif;
-  font-weight: 900;
-  font-size: 40px;
-  margin-top: 10px;
+  font-size: 60px;
+  color: #414141;
 }
 #header .header-container .info .title h2 {
-  font-size: 20px;
-  margin-top: 10px;
+  font-size: 30px;
+  margin-top: 5px;
   font-family: "Raleway", Sans-Serif;
   font-weight: 900;
+  color: #414141;
 }
 #header .header-container .info .social {
   margin-top: 10px;
 }
 #header .header-container .info .social a {
   display: inline-block;
-  color: black;
-  font-size: 25px;
-  padding: 10px;
-}
-#header .header-container .info .latest {
-  margin-top: 20px;
-}
-#header .header-container .info .latest a {
-  color: black;
-  text-decoration: none;
-  font-size: 20px;
-  padding: 5px;
-  border: 2px solid black;
-  font-family: "Raleway", Sans-Serif;
-}
-#header .header-container .info .latest a:hover {
-  transition: ease-in-out 0.5s;
-  color: white;
-  border-color: white;
+  color: #414141;
+  font-size: 30px;
+  padding: 0px 10px;
 }
 
 @media all and (max-width: 550px) {
   #header .header-container .hamburger {
     display: block;
+  }
+  #header .header-container .info .name h1 {
+    font-size: 40px;
+  }
+  #header .header-container .info .title h2 {
+    font-size: 25px;
   }
   #header .menu {
     display: none;
@@ -254,7 +245,7 @@ table {
 #about {
   padding: 40px 0 0 0;
   margin: 0 auto;
-  background: white;
+  background: #f8f8f8;
 }
 #about h1 {
   text-align: center;
@@ -336,8 +327,8 @@ table {
 }
 #projects {
   background: #f8f8f8;
-  margin: 40px auto 0 auto;
-  padding-bottom: 40px;
+  margin: 0 auto;
+  padding: 40px 0;
 }
 #projects a {
   text-decoration: none;
@@ -345,7 +336,6 @@ table {
 }
 #projects h1 {
   text-align: center;
-  padding-top: 40px;
   padding-bottom: 10px;
   font-family: "Raleway", Sans-Serif;
   font-weight: 900;
@@ -364,15 +354,19 @@ table {
   grid-template-rows: 250px 250px 250px;
   grid-gap: 10px;
 }
+#projects .projects-container .box {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
 #projects .projects-container .box .title {
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #414141;
 }
 #projects .projects-container .box .title h2 {
-  border: 1px solid black;
+  border: 1px solid #414141;
   padding: 10px;
   font-family: "Raleway", Sans-Serif;
   font-weight: 900;
@@ -487,6 +481,50 @@ table {
   padding: 10px;
 }
 
+body {
+  background: #f8f8f8;
+}
+
+.hamburger {
+  display: none;
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 5;
+  color: #414141;
+}
+
+.mobile-nav {
+  display: none;
+  background: white;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  background: #f8f8f8;
+}
+.mobile-nav ul {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-nav ul a {
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 30px;
+  color: #414141;
+  font-family: "Raleway", Sans-Serif;
+}
+
+.menu ul a {
+  color: #414141;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -518,6 +556,7 @@ table {
 }
 .container .glide {
   margin-top: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 .container .glide .fa-chevron-left,
 .container .glide .fa-chevron-right {
@@ -525,6 +564,7 @@ table {
 }
 .container .glide img {
   width: 100%;
+  height: 100%;
 }
 .container .technologies-used {
   padding-top: 30px;
@@ -538,10 +578,20 @@ table {
 }
 .container .technologies-used span {
   padding: 10px 5px 0 0;
-  font-size: 25px;
-  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-family: "Open Sans", Sans-Serif;
+  color: #414141;
 }
 
+@media all and (max-width: 550px) {
+  .hamburger {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+}
 @media all and (max-width: 650px) {
   .container .project-description {
     width: 100%;

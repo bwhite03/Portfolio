@@ -28,9 +28,24 @@
       rel="stylesheet"
       href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
     <title>Blake White</title>
   </head>
   <body>
+    <div class="mobile-nav animated slideInDown">
+      <ul>
+        <a class="link" href="/"><li>Home</li></a>
+        <a class="link" href="/#about"><li>About</li></a>
+        <a class="link" href="/#projects"><li>Projects</li></a>
+        <a class="link" href="/#contact"><li>Contact</li></a>
+      </ul>
+    </div>
+    <div class="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
     <nav class="menu">
       <ul>
         <a href="/"><li>Home</li></a>
@@ -79,13 +94,15 @@
       </div>
       <div class="technologies-used">
         <h2>Technologies Used</h2>
-        <span><i class="fab fa-sass" style="color: #c6538c;"></i></span>
-        <span><i class="fab fa-react" style="color: #00d8ff;"></i></span>
+        <span>React</span>
+        <span>Sass</span>
+        <span>API</span>
       </div>
     </main>
     <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
     <script>
       new Glide(".glide").mount();
     </script>
+    <script src="/js/mobile-nav.js"></script>
   </body>
 </html>
