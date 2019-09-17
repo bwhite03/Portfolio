@@ -5,16 +5,16 @@ const allLinks = document.querySelectorAll(".link");
 document.querySelector(".hamburger").addEventListener("click", () => {
   if (nav.style.display === "block") {
     nav.style.display = "none";
-    overflow.style.overflow = "auto";
+    overflow.style.overflowY = "auto";
   } else {
     nav.style.display = "block";
-    overflow.style.overflow = "hidden";
+    overflow.style.overflowY = "hidden";
   }
 });
 
 allLinks.forEach(element => {
   element.addEventListener("click", () => {
     nav.style.display = "none";
-    overflow.style.overflow = "auto";
+    overflow.style.overflowY = "scroll";
   });
 });

@@ -135,7 +135,6 @@ table {
 
 .mobile-nav {
   display: none;
-  background: white;
   height: 100vh;
   width: 100%;
   position: fixed;
@@ -147,6 +146,7 @@ table {
   width: 100%;
   justify-content: center;
   align-items: center;
+  background: #e8e8e8;
 }
 .mobile-nav ul a {
   padding: 10px 0;
@@ -227,6 +227,14 @@ table {
   font-size: 30px;
   padding: 0px 10px;
 }
+#header .header-container .info .social a .fa-github-square:hover {
+  color: #c9510c;
+  transition: all 0.4s ease-in-out;
+}
+#header .header-container .info .social a .fa-envelope:hover {
+  color: white;
+  transition: all 0.4s ease-in-out;
+}
 
 @media all and (max-width: 550px) {
   #header .header-container .hamburger {
@@ -243,7 +251,7 @@ table {
   }
 }
 #about {
-  padding: 40px 0 0 0;
+  padding: 40px 0;
   margin: 0 auto;
   background: #f8f8f8;
 }
@@ -301,15 +309,6 @@ table {
   padding: 15px;
   text-align: center;
 }
-#about .box-container .one {
-  border-bottom: 2px solid #414141;
-}
-#about .box-container .two {
-  border-bottom: 2px solid #414141;
-}
-#about .box-container .three {
-  border-bottom: 2px solid #414141;
-}
 
 @media all and (max-width: 900px) {
   #about .box-container {
@@ -326,7 +325,7 @@ table {
   }
 }
 #projects {
-  background: #f8f8f8;
+  background: #f0f0f0;
   margin: 0 auto;
   padding: 40px 0;
 }
@@ -461,6 +460,14 @@ table {
   font-size: 40px;
   color: black;
   padding: 10px;
+}
+#contact .contact-container .info a .fa-github-square:hover {
+  color: #c9510c;
+  transition: all 0.4s ease-in-out;
+}
+#contact .contact-container .info a .fa-envelope:hover {
+  color: white;
+  transition: all 0.4s ease-in-out;
 }
 
 .menu {
@@ -601,6 +608,7 @@ html,
 body {
   overflow-x: hidden;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /*# sourceMappingURL=style.css.map */

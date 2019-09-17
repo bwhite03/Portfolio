@@ -1,6 +1,5 @@
 .mobile-nav {
   display: none;
-  background: white;
   height: 100vh;
   width: 100%;
   position: fixed;
@@ -12,6 +11,7 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+    background: #e8e8e8;
 
     a {
       padding: 10px 0;
@@ -55,10 +55,12 @@
     width: 100%;
     top: 0;
     padding: 10px;
+
     ul {
       text-align: right;
       padding: 0 20px;
     }
+
     ul a {
       font-family: "Raleway", Sans-Serif;
       font-weight: 900;
@@ -93,6 +95,16 @@
         color: #414141;
         font-size: 30px;
         padding: 0px 10px;
+
+        .fa-github-square:hover {
+          color: #c9510c;
+          transition: all 0.4s ease-in-out;
+        }
+
+        .fa-envelope:hover {
+          color: white;
+          transition: all 0.4s ease-in-out;
+        }
       }
     }
   }
