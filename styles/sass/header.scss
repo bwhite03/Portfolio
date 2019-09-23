@@ -25,11 +25,10 @@
 
 #header .header-container {
   background: url("https://i.ibb.co/Y2QZnry/sky.jpg");
-  height: 70vh;
+  height: 50vh;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,6 +47,7 @@
     right: 20px;
     font-size: 20px;
     cursor: pointer;
+    color: #191919;
   }
 
   .menu {
@@ -65,7 +65,7 @@
       font-family: "Raleway", Sans-Serif;
       font-weight: 900;
       text-decoration: none;
-      color: #414141;
+      color: #191919;
       li {
         display: inline-block;
         padding: 10px;
@@ -79,20 +79,20 @@
       font-family: "Raleway", Sans-Serif;
 
       font-size: 60px;
-      color: #414141;
+      color: #191919;
     }
     .title h2 {
       font-size: 30px;
       margin-top: 5px;
       font-family: "Raleway", Sans-Serif;
       font-weight: 900;
-      color: #414141;
+      color: #191919;
     }
     .social {
       margin-top: 10px;
       a {
         display: inline-block;
-        color: #414141;
+        color: #191919;
         font-size: 30px;
         padding: 0px 10px;
 

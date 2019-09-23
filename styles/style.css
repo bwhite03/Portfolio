@@ -158,11 +158,10 @@ table {
 
 #header .header-container {
   background: url("https://i.ibb.co/Y2QZnry/sky.jpg");
-  height: 70vh;
+  height: 50vh;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -182,6 +181,7 @@ table {
   right: 20px;
   font-size: 20px;
   cursor: pointer;
+  color: #191919;
 }
 #header .header-container .menu {
   position: absolute;
@@ -197,7 +197,7 @@ table {
   font-family: "Raleway", Sans-Serif;
   font-weight: 900;
   text-decoration: none;
-  color: #414141;
+  color: #191919;
 }
 #header .header-container .menu ul a li {
   display: inline-block;
@@ -209,21 +209,21 @@ table {
 #header .header-container .info .name h1 {
   font-family: "Raleway", Sans-Serif;
   font-size: 60px;
-  color: #414141;
+  color: #191919;
 }
 #header .header-container .info .title h2 {
   font-size: 30px;
   margin-top: 5px;
   font-family: "Raleway", Sans-Serif;
   font-weight: 900;
-  color: #414141;
+  color: #191919;
 }
 #header .header-container .info .social {
   margin-top: 10px;
 }
 #header .header-container .info .social a {
   display: inline-block;
-  color: #414141;
+  color: #191919;
   font-size: 30px;
   padding: 0px 10px;
 }
@@ -495,7 +495,7 @@ body {
   font-size: 20px;
   cursor: pointer;
   z-index: 5;
-  color: #414141;
+  color: #191919;
 }
 
 .mobile-nav {
@@ -524,7 +524,7 @@ body {
 }
 
 .menu ul a {
-  color: #414141;
+  color: #191919;
 }
 
 .container {
@@ -569,6 +569,9 @@ body {
   width: 100%;
   height: 100%;
 }
+.container .glide button {
+  border: 1px solid black;
+}
 .container .technologies-used {
   padding-top: 30px;
 }
@@ -587,6 +590,14 @@ body {
 }
 
 @media all and (max-width: 550px) {
+  .container {
+    padding: 40px 15px;
+  }
+  .container .title {
+    padding-top: 30px;
+    font-size: 30px;
+  }
+
   .hamburger {
     display: block;
   }
