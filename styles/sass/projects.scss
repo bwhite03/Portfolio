@@ -89,6 +89,11 @@
       background-size: cover;
       background-position: center;
     }
+    .eight {
+      background: url("https://i.ibb.co/7Jn9CDt/sketch-app-pic.png");
+      background-size: cover;
+      background-position: center;
+    }
   }
 }
 
@@ -107,7 +112,7 @@
     .projects-container {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 250px 250px 250px 250px 250px 250px 250px;
+      grid-template-rows: 250px 250px 250px 250px 250px 250px 250px 250px;
     }
   }
 }
